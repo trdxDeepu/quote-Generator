@@ -22,19 +22,14 @@ function newQuote() {
      }
 
      //check the quote length
-     if(quote.text.length >50){
+     if(quote.text.length >2000){
          quoteText.classList.add('long-quote');
 
      }
      else{
          quote.classList.remove ('long-quote')
             }
-
-
-
-
-
-   quoteText.textContent = quote.text;
+quoteText.textContent = quote.text;
 }
 
 async function getQuotes() {

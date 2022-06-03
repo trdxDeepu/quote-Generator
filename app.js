@@ -22,7 +22,13 @@ function newQuote() {
      }
 
      //check the quote length
-     
+     if(quote.text.length >50){
+         quoteText.classList.add('long-quote');
+
+     }
+     else{
+         quote.classList.remove ('long-quote')
+            }
 
 
 

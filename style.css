@@ -70,8 +70,12 @@ button:active{
     box-shadow: 0 0.1rem rgba(255,255,255,0.65);
 }
 
-.twitter-button:hover{
-    color: ;
+.github-button:hover{
+ background-color: #b2ce96;
+    border: 1px solid #b2ce96;
+}
+.fa-github{
+    font-size: 1.2rem;
 }
 
 @media screen and (max-width:1000px){

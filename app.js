@@ -1,6 +1,6 @@
 const quoteContainer = document.getElementById('quote-container');
 const quoteText = document.getElementById('quote');
-const authorText = document.getElementById('quote-author');
+const authorText = document.getElementById('author');
 const githubBtn = document.getElementById('github');
 const newQuoteBtn = document.getElementById('new-quote');
 

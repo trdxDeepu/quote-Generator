@@ -12,7 +12,22 @@ let apiQuotes  =[ ] ;
 
 function newQuote() {
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
-   authorText.textContent =quote.author;
+
+     if (!quote.author){
+         authorText.textContent = 'Unknown';
+     }
+
+     else{
+         authorText.textContent =quote.author;
+     }
+
+     //check the quote length
+     
+
+
+
+
+
    quoteText.textContent = quote.text;
 }
 

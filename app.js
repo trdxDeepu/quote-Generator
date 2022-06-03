@@ -22,7 +22,7 @@ function newQuote() {
      }
 
      //check the quote length
-     if(quote.text.length >2000){
+     if(quote.text.length >10){
          quoteText.classList.add('long-quote');
 
      }

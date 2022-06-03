@@ -54,7 +54,7 @@ loading();
       apiQuotes = await response.json();
       newQuote();
     } catch (error) {
-      // Catch Error Here
+    
     }
   }
   newQuoteBtn.addEventListener('click', newQuote);

@@ -552,3 +552,4 @@ const localQuotes = [
       author: null,
     },
   ];
+  

@@ -65,6 +65,14 @@ button{
 button:hover{
     filter: brightness(110%);
 }
+button:active{
+    transform: translate(0,0.3rem);
+    box-shadow: 0 0.1rem rgba(255,255,255,0.65);
+}
+
+.twitter-button:hover{
+    color: ;
+}
 
 @media screen and (max-width:1000px){
     .quote-container{

@@ -3,7 +3,17 @@ const quoteText = document.getElementById('quote');
 const authorText = document.getElementById('author');
 const githubBtn = document.getElementById('github');
 const newQuoteBtn = document.getElementById('new-quote');
+const loader = document.getElementById('loader');
 
+function loading(){
+    loader.hidden = false;
+    quoteContainer.hidden = true;
+}
+
+function complete(){
+    quoteContainer.hidden = false;
+    loader.hidden = true;
+}
 
 
 
@@ -11,6 +21,7 @@ const newQuoteBtn = document.getElementById('new-quote');
 let apiQuotes  =[ ] ;
 
 function newQuote() {
+    loading();
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
 
      if (!quote.author){
@@ -29,10 +40,13 @@ function newQuote() {
      else{
          quote.classList.remove ('long-quote')
             }
+
 quoteText.textContent = quote.text;
+complete();
 }
 
 async function getQuotes() {
+loading();
     
     const apiUrl = 'https://type.fit/api/quotes';
     try {
@@ -43,6 +57,6 @@ async function getQuotes() {
       // Catch Error Here
     }
   }
+  newQuoteBtn.addEventListener('click', newQuote);
 
 getQuotes();
-
